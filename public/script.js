@@ -4,10 +4,11 @@ const videoGrid = document.getElementById('video-grid')
 const myVideo = document.createElement('video')
 myVideo.muted = true
 
+// SET PORT TO 443 IN PRODUCTION
 var peer = new Peer(undefined, {
     path: '/peerjs',
     host: '/',
-    port: '3030'
+    port: '443'
 })
 
 let myVideoStream
